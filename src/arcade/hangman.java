@@ -9,9 +9,9 @@ public class Hangman {
 
     public static int wrongGuesses = 0;
 
-    public static boolean isWon = false;
+    public static boolean isWon = false; //set to false to start
 
-    public static String selectWord() {
+    public static String selectWord() { //function for selecting a random word from an array based on selected difficulty
         Scanner scanner = new Scanner(System.in);  // Create a Scanner object
         System.out.println("Would you like to play an easy or hard game? (Enter easy or hard to make selection)");
         String difficultySelection = scanner.nextLine();  // Read user input
@@ -103,10 +103,8 @@ public class Hangman {
             }
             System.out.println();
         }
-
         return false;
     }
-
 
 
     public static void main(String[] args) {
