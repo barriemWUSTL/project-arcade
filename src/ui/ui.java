@@ -55,7 +55,7 @@ public class ui {
 			hangmanTemp.run();
 			//call method to start hangman
 		}
-		else if (input ==2 ) {
+		else if (input == 2 ) {
 			warTemp.run();
 			//call method to start war
 		}
