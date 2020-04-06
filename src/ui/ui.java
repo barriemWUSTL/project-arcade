@@ -1,5 +1,4 @@
 import java.util.Scanner;
-//github copy
 public class ui {
 	public static void main(String[] args) {
 		System.out.println("Welcome to the Java Arcade!" + "\n" + 
