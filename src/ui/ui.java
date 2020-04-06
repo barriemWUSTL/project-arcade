@@ -14,11 +14,11 @@ public class ui {
 				if(validInput(input)) {
 					badInput = false;
 					if(input == 1) {
-						System.out.println("Hangman selected");
+						System.out.println("Entering Hangman...");
 						runfile(input);
 					}
 					else if(input == 2) {
-						System.out.println("Rock, Paper, Scissors selected");
+						System.out.println("Entering Rock, Paper, Scissors...");
 						runfile(input);
 					}
 				}
@@ -32,7 +32,6 @@ public class ui {
 				scanner.nextLine();
 			}
 		}
-		
 		scanner.close();
 	}
 	
@@ -52,13 +51,11 @@ public class ui {
 	
 	public static boolean runfile(int input) {
 		if (input == 1) {
-			hangmanTemp.run();
-			//call method to start hangman
+			Hangman.main(null);
 			return true;
 		}
-		else if (input ==2 ) {
-			rpsTemp.run();
-			//call method to start rock, paper, scissors
+		else if (input == 2 ) {
+			RPS.main(null);
 			return true;
 		}
 		return false;
